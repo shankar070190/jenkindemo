@@ -1,4 +1,4 @@
-FROM Openjdk:21
-expose 8484
-ADD traget/jenkindemo.jar jenkindemo.jar
+FROM openjdk:21
+EXPOSE 8484
+ADD target/jenkindemo.jar jenkindemo.jar
 ENTRYPOINT ["java","-jar","/jenkindemo.jar"]
